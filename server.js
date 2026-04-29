@@ -22,9 +22,7 @@ const limiter = rateLimit({
 app.use("/api/", limiter);
 
 // 🛡️ CORS (permitir solo tu dominio)
-app.use(cors({
-  origin: ["https://belenaraceli.com"]
-}));
+app.use(cors());
 
 // 📩 Endpoint
 app.post("/api/contacto", async (req, res) => {
