@@ -14,7 +14,12 @@ if (!process.env.RESEND_API_KEY) {
   process.exit(1);
 }
 
-const EMAIL_DESTINO = process.env.EMAIL_DESTINO || "bre-nia@hotmail.com";
+const EMAIL_DESTINO = process.env.EMAIL_DESTINO;
+
+if (!process.env.EMAIL_DESTINO) {
+  console.error("❌ Falta EMAIL_DESTINO en las variables de entorno");
+  process.exit(1);
+}
 
 console.log("✅ RESEND_API_KEY cargada correctamente");
 console.log("📧 Los briefs van a llegar a:", EMAIL_DESTINO);
