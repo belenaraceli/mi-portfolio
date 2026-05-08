@@ -157,7 +157,7 @@ app.post("/api/contacto", async (req, res) => {
 
   try {
     const { data: result, error } = await resend.emails.send({
-      from: "Brief <onboarding@resend.dev>",  // dominio gratuito de Resend
+      from: "Brief <brief@belenaraceli.com>",  // dominio gratuito de Resend
       to: EMAIL_DESTINO,
       replyTo: data.email,
       subject: `✨ Nuevo Brief — ${data.nombre}${data.empresa ? " · " + data.empresa : ""}`,
