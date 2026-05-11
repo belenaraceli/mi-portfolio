@@ -22,7 +22,7 @@
       --gold:     #c3b17c;
       --gold-dim: rgba(201,168,76,0.35);
       --muted:    #6a6456;
-      --field-bg: #181814;
+      --field-bg: #22221f;
       --field-border: rgba(201,168,76,0.18);
       --accent:   #c9a84c;
     }
@@ -225,7 +225,7 @@
 
     .section-num {
       font-family: 'Harmond', sans-serif;
-      font-size: 13px;
+      font-size: 23px;
       font-style: italic;
       color: var(--gold-dim);
       padding-top: 5px;
@@ -963,15 +963,13 @@
         <div class="field-row cols-1">
           <div class="field">
             <label>¿Tenés un presupuesto estimado?</label>
-            <select name="presupuesto">
-              <option value="" disabled selected>Seleccioná un rango aproximado</option>
-              <option>Menos de $300 USD</option>
-              <option>$300 – $800 USD</option>
-              <option>$800 – $1.500 USD</option>
-              <option>$1.500 – $3.000 USD</option>
-              <option>Más de $3.000 USD</option>
-              <option>Todavía no lo definí / Quiero ver propuestas</option>
-            </select>
+              <select name="presupuesto">
+                <option value="" disabled selected>Seleccioná un rango aproximado</option>
+                <option>Básico — landing page (hasta USD 150)</option>
+                <option>Intermedio — sitio de varias páginas (USD 150 – 350)</option>
+                <option>Completo — e-commerce o funcionalidades avanzadas (USD 350 – 700)</option>
+                <option>Todavía no lo definí / Quiero ver propuestas</option>
+              </select>
           </div>
         </div>
         <div class="note">💡 El presupuesto me ayuda a proponerte la mejor solución dentro de tus posibilidades. No hay respuestas incorrectas.</div>
