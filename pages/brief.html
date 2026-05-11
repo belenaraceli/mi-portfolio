@@ -54,7 +54,7 @@
        HERO
     ══════════════════════════════════ */
     .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/images/5.png') no-repeat center;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../assets/images/herobg.png') no-repeat center;
       padding: 80px 56px 72px;
       position: relative;
       overflow: hidden;
@@ -1164,7 +1164,7 @@
       if (!res.ok) throw new Error(result.error || "Error del servidor");
 
       // SUCCESS 🎉
-      document.getElementById('form-wrap').style.display = 'none';
+      document.getElementById('brief-form').style.display = 'none';
       const success = document.getElementById('success-screen');
       success.classList.add('show');
       window.scrollTo({ top: 0, behavior: 'smooth' });
